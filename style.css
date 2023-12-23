@@ -1,0 +1,36 @@
+*
+{
+  background-color: cornflowerblue;
+}
+  .container
+  {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:35px;
+  }
+  .item
+  {
+    border:1px solid #000;
+    padding:20px;
+    text-align: center;
+    background-color: lightslategray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;;
+    width: 200px;
+  
+    }
+    .item:nth-child(1)
+    {
+      background-image:url('image1.jpg');
+    }
+    @media screen and (max-width: 992px) {
+      body{ 
+  background-color: aqua;}
+    }
+    @media screen and (max-width: 600px) {
+      body{
+  background-color: blue;}
+    }
+
+    
